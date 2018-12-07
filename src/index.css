@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.active {
+  color: red;
+}
+
+.parentDiv {
+  padding-top: 20px;
+}
+
+.btn {
+  margin-left: 20px;
+  margin-right: 20px;
+}

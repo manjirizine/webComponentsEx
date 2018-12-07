@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SimpleWebComponent from "./webComponent_simple";
+import XCounter from "./xCounter";
+import SimpleButton from "./webComponentBtn";
 
 class App extends Component {
   render() {
+    const text ="From APP -----------"
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +23,13 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+
+        </header> */}
+        <simple-web-component content={text}></simple-web-component>
+        <x-counter></x-counter>
+        <br></br>
+        <simple-button textToDisplay={"I am Form App------"}></simple-button>
+
       </div>
     );
   }
